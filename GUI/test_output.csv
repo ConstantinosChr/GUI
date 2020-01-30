@@ -1,0 +1,245 @@
+,Variation Category,Variation Sub Category,Name Variation,Original Name,Resulting Name,Success
+0,Initials,firstname_initials_single,firstname_initials_single,Constantinos Christodoulides,C. Christodoulides,True
+1,Initials,firstname_initials,firstname_initials,Constantinos Christodoulides,C. Christodoulides,True
+2,Initials,initials_lastname,initials_lastname,Constantinos Christodoulides,Constantinos C.,True
+3,Initials,lastname_initials_clear_first_name,lastname_initials_clear_first_name,Constantinos Christodoulides, C.,True
+4,Character Extension,add_spc_in_letters,add_spc_in_letters,Constantinos Christodoulides,Constantinos Chr istodoulides,True
+5,Character Extension,add_prefix,add_al_and_hyphen,Constantinos Christodoulides,Constantinos al-Christodoulides,True
+6,Character Extension,add_prefix,add_Al_and_space,Constantinos Christodoulides,Constantinos Al-Christodoulides,True
+7,Character Extension,add_prefix,add_El_and_space,Constantinos Christodoulides,Constantinos El-Christodoulides,True
+8,Character Extension,add_vowel,add_vowel,Constantinos Christodoulides,Coenstantinos Christodoulides,True
+9,Character Extension,add_h_before_vowel,add_h_before_vowel,Constantinos Christodoulides,Constantinos Christodoulidhes,True
+10,Character Extension,add_consonant,add_consonant_final_s,Constantinos Christodoulides,Constantinoss Christodoulides,True
+11,Character Extension,add_consonant,add_consonant_final_r,Constantinos Christodoulides,Constantinos Christodoulidesr,True
+12,Character Extension,add_consonant,add_consonant_final_z,Constantinos Christodoulides,Constantinos Christodoulidesz,True
+13,Character Extension,add_consonant,add_consonant_uncommon,Constantinos Christodoulides,Constantinos Chbristodoulides,True
+14,Character Extension,add_consonant,add_consonant_double,Constantinos Christodoulides,Constantinoss Christodoulides,True
+15,Character Extension,add_special_character,add_special_character_apostrophe,Constantinos Christodoulides,Constantinos Ch'ristodoulides,True
+16,Character Extension,add_special_character,add_special_character_accent,Constantinos Christodoulides,Cónstantinos Christodoulides,True
+17,Character Extension,add_special_character,add_special_character_uncommon,Constantinos Christodoulides,Constantinos Christodo:ulides,True
+18,Character Replacement,phonetic_replacement,phonetic_replacement,Constantinos Christodoulides,Constantinos Christuadoulides,True
+19,Character Replacement,typographic_error,typographic_error,Constantinos Christodoulides,Constantinos Christofoulides,True
+20,Character Replacement,alphabet_alternative,alphabet_alternative,Constantinos Christodoulides,Constañtinos Christodoulides,True
+21,Character Replacement,character_replacement_uncommon,character_replacement_uncommon,Constantinos Christodoulides,Constantinos Christodoulidos,True
+22,Character Reduction,phonetic_miss,remove_h,Constantinos Christodoulides,Constantinos Cristodoulides,True
+23,Character Reduction,phonetic_miss,remove_c_before_k,Constantinos Christodoulides,Constantinos Christodoulides,False
+24,Character Reduction,phonetic_miss,remove_e_before_s,Constantinos Christodoulides,Constantinos Christodoulids,True
+25,Character Reduction,phonetic_miss,remove_final_s,Constantinos Christodoulides,Constantinos Christodoulide,True
+26,Character Reduction,phonetic_miss,remove_final_z,Constantinos Christodoulides,Constantinos Christodoulides,False
+27,Character Reduction,phonetic_miss,remove_final_d,Constantinos Christodoulides,Constantinos Christodoulides,False
+28,Character Reduction,character_reduction_uncommon,character_reduction_uncommon,Constantinos Christodoulides,Cnstantinos Christodoulides,True
+29,Transposition,phonetic_transposition,phonetic_transposition,Constantinos Christodoulides,Constantinos Chrsitodoulides,True
+30,Transposition,transposition_uncommon,transposition_uncommon,Constantinos Christodoulides,Constantinos Christoduolides,True
+31,Double Characters,double_character_reduction,double_character_reduction,Constantinos Christodoulides,Constantinos Christodoulides,False
+32,Double Characters,double_character_insertion,double_character_insertion,Constantinos Christodoulides,Constantinos Christodouliddes,True
+33,Spaces,spaces_reduction,spaces_reduction,Constantinos Christodoulides,ConstantinosChristodoulides,True
+34,Spaces,spaces_insertion,spaces_insertion,Constantinos Christodoulides,Constantinos Chris todoulides,True
+35,Name Order,random_name_transposition,random_name_transposition,Constantinos Christodoulides,Christodoulides Constantinos,True
+36,Name Order,transposition_name,transposition_name,Constantinos Christodoulides,Christodoulides Constantinos,True
+37,Titles,title_insertion,title_insertion,Constantinos Christodoulides,Madam Constantinos Christodoulides,True
+38,Titles,title_removal,title_removal,Constantinos Christodoulides,Constantinos Christodoulides,False
+39,Missing Name Component,name_component_deletion,name_component_deletion,Constantinos Christodoulides,Christodoulides,True
+40,Initials,firstname_initials_single,firstname_initials_single,Mr. Constantinos Christodoulides,M. Constantinos Christodoulides,True
+41,Initials,firstname_initials,firstname_initials,Mr. Constantinos Christodoulides,M.C. Christodoulides,True
+42,Initials,initials_lastname,initials_lastname,Mr. Constantinos Christodoulides,Mr. Constantinos C.,True
+43,Initials,lastname_initials_clear_first_name,lastname_initials_clear_first_name,Mr. Constantinos Christodoulides,Constantinos C.,True
+44,Character Extension,add_spc_in_letters,add_spc_in_letters,Mr. Constantinos Christodoulides,Mr. C onstantinos Christodoulides,True
+45,Character Extension,add_prefix,add_al_and_hyphen,Mr. Constantinos Christodoulides,Mr. Constantinos al-Christodoulides,True
+46,Character Extension,add_prefix,add_Al_and_space,Mr. Constantinos Christodoulides,Mr. Constantinos Al-Christodoulides,True
+47,Character Extension,add_prefix,add_El_and_space,Mr. Constantinos Christodoulides,Mr. Constantinos El-Christodoulides,True
+48,Character Extension,add_vowel,add_vowel,Mr. Constantinos Christodoulides,Mro. Constantinos Christodoulides,True
+49,Character Extension,add_h_before_vowel,add_h_before_vowel,Mr. Constantinos Christodoulides,Mr. Constantinos Christhodoulides,True
+50,Character Extension,add_consonant,add_consonant_final_s,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulidess,True
+51,Character Extension,add_consonant,add_consonant_final_r,Mr. Constantinos Christodoulides,Mr. Constantinosr Christodoulides,True
+52,Character Extension,add_consonant,add_consonant_final_z,Mr. Constantinos Christodoulides,Mr.z Constantinos Christodoulides,True
+53,Character Extension,add_consonant,add_consonant_uncommon,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulildes,True
+54,Character Extension,add_consonant,add_consonant_double,Mr. Constantinos Christodoulides,Mr. Constantinos Chrisstodoulides,True
+55,Character Extension,add_special_character,add_special_character_apostrophe,Mr. Constantinos Christodoulides,Mr. Constantinos C'hristodoulides,True
+56,Character Extension,add_special_character,add_special_character_accent,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulídes,True
+57,Character Extension,add_special_character,add_special_character_uncommon,Mr. Constantinos Christodoulides,Mr. Constantinos {Christodoulides,True
+58,Character Replacement,phonetic_replacement,phonetic_replacement,Mr. Constantinos Christodoulides,Mr. Constentinos Christodoulides,True
+59,Character Replacement,typographic_error,typographic_error,Mr. Constantinos Christodoulides,Mr. Consyantinos Christodoulides,True
+60,Character Replacement,alphabet_alternative,alphabet_alternative,Mr. Constantinos Christodoulides,Mr. Constañtinos Christodoulides,True
+61,Character Replacement,character_replacement_uncommon,character_replacement_uncommon,Mr. Constantinos Christodoulides,Mr. Constahtinos Christodoulides,True
+62,Character Reduction,phonetic_miss,remove_h,Mr. Constantinos Christodoulides,Mr. Constantinos Cristodoulides,True
+63,Character Reduction,phonetic_miss,remove_c_before_k,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulides,False
+64,Character Reduction,phonetic_miss,remove_e_before_s,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulids,True
+65,Character Reduction,phonetic_miss,remove_final_s,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulide,True
+66,Character Reduction,phonetic_miss,remove_final_z,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulides,False
+67,Character Reduction,phonetic_miss,remove_final_d,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulides,False
+68,Character Reduction,character_reduction_uncommon,character_reduction_uncommon,Mr. Constantinos Christodoulides,Mr. Constntinos Christodoulides,True
+69,Transposition,phonetic_transposition,phonetic_transposition,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulieds,True
+70,Transposition,transposition_uncommon,transposition_uncommon,Mr. Constantinos Christodoulides,Mr. Constantinos Christoduolides,True
+71,Double Characters,double_character_reduction,double_character_reduction,Mr. Constantinos Christodoulides,Mr. Constantinos Christodoulides,False
+72,Double Characters,double_character_insertion,double_character_insertion,Mr. Constantinos Christodoulides,Mr. Constantinnos Christodoulides,True
+73,Spaces,spaces_reduction,spaces_reduction,Mr. Constantinos Christodoulides,Mr. ConstantinosChristodoulides,True
+74,Spaces,spaces_insertion,spaces_insertion,Mr. Constantinos Christodoulides,Mr. C onstantinos Christodoulides,True
+75,Name Order,random_name_transposition,random_name_transposition,Mr. Constantinos Christodoulides,Mr. Christodoulides Constantinos,True
+76,Name Order,transposition_name,transposition_name,Mr. Constantinos Christodoulides,Mr. Christodoulides Constantinos,True
+77,Titles,title_insertion,title_insertion,Mr. Constantinos Christodoulides,Miss Mr. Constantinos Christodoulides,True
+78,Titles,title_removal,title_removal,Mr. Constantinos Christodoulides,Constantinos Christodoulides,True
+79,Missing Name Component,name_component_deletion,name_component_deletion,Mr. Constantinos Christodoulides,Mr. Christodoulides,True
+80,Initials,firstname_initials_single,firstname_initials_single,Mrs. Name1 Name2 Name3,M. Name1 Name2 Name3,True
+81,Initials,firstname_initials,firstname_initials,Mrs. Name1 Name2 Name3,M.N. Name2 Name3,True
+82,Initials,initials_lastname,initials_lastname,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 N.,True
+83,Initials,lastname_initials_clear_first_name,lastname_initials_clear_first_name,Mrs. Name1 Name2 Name3,Name1 Name2 N.,True
+84,Character Extension,add_spc_in_letters,add_spc_in_letters,Mrs. Name1 Name2 Name3,Mrs. Nam e1 Name2 Name3,True
+85,Character Extension,add_prefix,add_al_and_hyphen,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 al-Name3,True
+86,Character Extension,add_prefix,add_Al_and_space,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Al-Name3,True
+87,Character Extension,add_prefix,add_El_and_space,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 El-Name3,True
+88,Character Extension,add_vowel,add_vowel,Mrs. Name1 Name2 Name3,Mrs. Name1 Namea2 Name3,True
+89,Character Extension,add_h_before_vowel,add_h_before_vowel,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Nhame3,True
+90,Character Extension,add_consonant,add_consonant_final_s,Mrs. Name1 Name2 Name3,Mrs. Name1s Name2 Name3,True
+91,Character Extension,add_consonant,add_consonant_final_r,Mrs. Name1 Name2 Name3,Mrs.r Name1 Name2 Name3,True
+92,Character Extension,add_consonant,add_consonant_final_z,Mrs. Name1 Name2 Name3,Mrs. Name1z Name2 Name3,True
+93,Character Extension,add_consonant,add_consonant_uncommon,Mrs. Name1 Name2 Name3,Mrs. Name1 Named2 Name3,True
+94,Character Extension,add_consonant,add_consonant_double,Mrs. Name1 Name2 Name3,Mrss. Name1 Name2 Name3,True
+95,Character Extension,add_special_character,add_special_character_apostrophe,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name'3,True
+96,Character Extension,add_special_character,add_special_character_accent,Mrs. Name1 Name2 Name3,Mrs. Náme1 Name2 Name3,True
+97,Character Extension,add_special_character,add_special_character_uncommon,Mrs. Name1 Name2 Name3,Mrs. Na=me1 Name2 Name3,True
+98,Character Replacement,phonetic_replacement,phonetic_replacement,Mrs. Name1 Name2 Name3,Mrs. Name1 Nama2 Name3,True
+99,Character Replacement,typographic_error,typographic_error,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Namd3,True
+100,Character Replacement,alphabet_alternative,alphabet_alternative,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+101,Character Replacement,character_replacement_uncommon,character_replacement_uncommon,Mrs. Name1 Name2 Name3,Nrs. Name1 Name2 Name3,True
+102,Character Reduction,phonetic_miss,remove_h,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+103,Character Reduction,phonetic_miss,remove_c_before_k,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+104,Character Reduction,phonetic_miss,remove_e_before_s,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+105,Character Reduction,phonetic_miss,remove_final_s,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+106,Character Reduction,phonetic_miss,remove_final_z,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+107,Character Reduction,phonetic_miss,remove_final_d,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+108,Character Reduction,character_reduction_uncommon,character_reduction_uncommon,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name,True
+109,Transposition,phonetic_transposition,phonetic_transposition,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+110,Transposition,transposition_uncommon,transposition_uncommon,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+111,Double Characters,double_character_reduction,double_character_reduction,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Name3,False
+112,Double Characters,double_character_insertion,double_character_insertion,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2 Namee3,True
+113,Spaces,spaces_reduction,spaces_reduction,Mrs. Name1 Name2 Name3,Mrs. Name1 Name2Name3,True
+114,Spaces,spaces_insertion,spaces_insertion,Mrs. Name1 Name2 Name3,Mrs. N ame1 Name2 Name3,True
+115,Name Order,random_name_transposition,random_name_transposition,Mrs. Name1 Name2 Name3,Name2 Name1 Name3 Mrs.,True
+116,Name Order,transposition_name,transposition_name,Mrs. Name1 Name2 Name3,Mrs. Name2 Name1 Name3,True
+117,Titles,title_insertion,title_insertion,Mrs. Name1 Name2 Name3,Mx Mrs. Name1 Name2 Name3,True
+118,Titles,title_removal,title_removal,Mrs. Name1 Name2 Name3,Name1 Name2 Name3,True
+119,Missing Name Component,name_component_deletion,name_component_deletion,Mrs. Name1 Name2 Name3,Mrs. Name2 Name3,True
+120,Initials,firstname_initials_single,firstname_initials_single,John George Maria,J. George Maria,True
+121,Initials,firstname_initials,firstname_initials,John George Maria,J.G. Maria,True
+122,Initials,initials_lastname,initials_lastname,John George Maria,John George M.,True
+123,Initials,lastname_initials_clear_first_name,lastname_initials_clear_first_name,John George Maria,George M.,True
+124,Character Extension,add_spc_in_letters,add_spc_in_letters,John George Maria,John George Mar ia,True
+125,Character Extension,add_prefix,add_al_and_hyphen,John George Maria,John George al-Maria,True
+126,Character Extension,add_prefix,add_Al_and_space,John George Maria,John George Al-Maria,True
+127,Character Extension,add_prefix,add_El_and_space,John George Maria,John George El-Maria,True
+128,Character Extension,add_vowel,add_vowel,John George Maria,Johen George Maria,True
+129,Character Extension,add_h_before_vowel,add_h_before_vowel,John George Maria,John Georghe Maria,True
+130,Character Extension,add_consonant,add_consonant_final_s,John George Maria,John George Marias,True
+131,Character Extension,add_consonant,add_consonant_final_r,John George Maria,John Georger Maria,True
+132,Character Extension,add_consonant,add_consonant_final_z,John George Maria,Johnz George Maria,True
+133,Character Extension,add_consonant,add_consonant_uncommon,John George Maria,John Gkeorge Maria,True
+134,Character Extension,add_consonant,add_consonant_double,John George Maria,John Georgge Maria,True
+135,Character Extension,add_special_character,add_special_character_apostrophe,John George Maria,John George Ma'ria,True
+136,Character Extension,add_special_character,add_special_character_accent,John George Maria,John Géorge Maria,True
+137,Character Extension,add_special_character,add_special_character_uncommon,John George Maria,John G#eorge Maria,True
+138,Character Replacement,phonetic_replacement,phonetic_replacement,John George Maria,Juhn George Maria,True
+139,Character Replacement,typographic_error,typographic_error,John George Maria,John Geprge Maria,True
+140,Character Replacement,alphabet_alternative,alphabet_alternative,John George Maria,Johñ George Maria,True
+141,Character Replacement,character_replacement_uncommon,character_replacement_uncommon,John George Maria,Jjhn George Maria,True
+142,Character Reduction,phonetic_miss,remove_h,John George Maria,Jon George Maria,True
+143,Character Reduction,phonetic_miss,remove_c_before_k,John George Maria,John George Maria,False
+144,Character Reduction,phonetic_miss,remove_e_before_s,John George Maria,John George Maria,False
+145,Character Reduction,phonetic_miss,remove_final_s,John George Maria,John George Maria,False
+146,Character Reduction,phonetic_miss,remove_final_z,John George Maria,John George Maria,False
+147,Character Reduction,phonetic_miss,remove_final_d,John George Maria,John George Maria,False
+148,Character Reduction,character_reduction_uncommon,character_reduction_uncommon,John George Maria,ohn George Maria,True
+149,Transposition,phonetic_transposition,phonetic_transposition,John George Maria,John Geroge Maria,True
+150,Transposition,transposition_uncommon,transposition_uncommon,John George Maria,John Goerge Maria,True
+151,Double Characters,double_character_reduction,double_character_reduction,John George Maria,John George Maria,False
+152,Double Characters,double_character_insertion,double_character_insertion,John George Maria,John Georgee Maria,True
+153,Spaces,spaces_reduction,spaces_reduction,John George Maria,JohnGeorge Maria,True
+154,Spaces,spaces_insertion,spaces_insertion,John George Maria,J ohn George Maria,True
+155,Name Order,random_name_transposition,random_name_transposition,John George Maria,Maria George John,True
+156,Name Order,transposition_name,transposition_name,John George Maria,George John Maria,True
+157,Titles,title_insertion,title_insertion,John George Maria,Mrs John George Maria,True
+158,Titles,title_removal,title_removal,John George Maria,John George Maria,False
+159,Missing Name Component,name_component_deletion,name_component_deletion,John George Maria,John Maria,True
+160,Initials,firstname_initials_single,firstname_initials_single,"SANTACRUZ LONDONO, Jose","S. LONDONO, Jose",True
+161,Initials,firstname_initials,firstname_initials,"SANTACRUZ LONDONO, Jose",S.L. Jose,True
+162,Initials,initials_lastname,initials_lastname,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, J.",True
+163,Initials,lastname_initials_clear_first_name,lastname_initials_clear_first_name,"SANTACRUZ LONDONO, Jose","LONDONO, J.",True
+164,Character Extension,add_spc_in_letters,add_spc_in_letters,"SANTACRUZ LONDONO, Jose","SANT ACRUZ LONDONO, Jose",True
+165,Character Extension,add_prefix,add_al_and_hyphen,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, al-Jose",True
+166,Character Extension,add_prefix,add_Al_and_space,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Al-Jose",True
+167,Character Extension,add_prefix,add_El_and_space,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, El-Jose",True
+168,Character Extension,add_vowel,add_vowel,"SANTACRUZ LONDONO, Jose","SANTAeCRUZ LONDONO, Jose",True
+169,Character Extension,add_h_before_vowel,add_h_before_vowel,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Joshe",True
+170,Character Extension,add_consonant,add_consonant_final_s,"SANTACRUZ LONDONO, Jose","SANTACRUZs LONDONO, Jose",True
+171,Character Extension,add_consonant,add_consonant_final_r,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO,r Jose",True
+172,Character Extension,add_consonant,add_consonant_final_z,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO,z Jose",True
+173,Character Extension,add_consonant,add_consonant_uncommon,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jonse",True
+174,Character Extension,add_consonant,add_consonant_double,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Josse",True
+175,Character Extension,add_special_character,add_special_character_apostrophe,"SANTACRUZ LONDONO, Jose","SANTACRUZ L'ONDONO, Jose",True
+176,Character Extension,add_special_character,add_special_character_accent,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, José",True
+177,Character Extension,add_special_character,add_special_character_uncommon,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, @Jose",True
+178,Character Replacement,phonetic_replacement,phonetic_replacement,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Josa",True
+179,Character Replacement,typographic_error,typographic_error,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Josd",True
+180,Character Replacement,alphabet_alternative,alphabet_alternative,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+181,Character Replacement,character_replacement_uncommon,character_replacement_uncommon,"SANTACRUZ LONDONO, Jose","SANTACUUZ LONDONO, Jose",True
+182,Character Reduction,phonetic_miss,remove_h,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+183,Character Reduction,phonetic_miss,remove_c_before_k,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+184,Character Reduction,phonetic_miss,remove_e_before_s,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+185,Character Reduction,phonetic_miss,remove_final_s,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+186,Character Reduction,phonetic_miss,remove_final_z,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+187,Character Reduction,phonetic_miss,remove_final_d,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+188,Character Reduction,character_reduction_uncommon,character_reduction_uncommon,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jos",True
+189,Transposition,phonetic_transposition,phonetic_transposition,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Joes",True
+190,Transposition,transposition_uncommon,transposition_uncommon,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+191,Double Characters,double_character_reduction,double_character_reduction,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+192,Double Characters,double_character_insertion,double_character_insertion,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Josse",True
+193,Spaces,spaces_reduction,spaces_reduction,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO,Jose",True
+194,Spaces,spaces_insertion,spaces_insertion,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, J ose",True
+195,Name Order,random_name_transposition,random_name_transposition,"SANTACRUZ LONDONO, Jose","Jose SANTACRUZ LONDONO,",True
+196,Name Order,transposition_name,transposition_name,"SANTACRUZ LONDONO, Jose","LONDONO, SANTACRUZ Jose",True
+197,Titles,title_insertion,title_insertion,"SANTACRUZ LONDONO, Jose","Ms. SANTACRUZ LONDONO, Jose",True
+198,Titles,title_removal,title_removal,"SANTACRUZ LONDONO, Jose","SANTACRUZ LONDONO, Jose",False
+199,Missing Name Component,name_component_deletion,name_component_deletion,"SANTACRUZ LONDONO, Jose","LONDONO, Jose",True
+200,Alias,Alias,Alias,"SANTACRUZ LONDONO, Jose",EL GORDO CHEPE,Alias
+201,Alias,Alias,Alias,"SANTACRUZ LONDONO, Jose",DON CHEPE,Alias
+202,Alias,Alias,Alias,"SANTACRUZ LONDONO, Jose",CHEPE,Alias
+203,Initials,firstname_initials_single,firstname_initials_single,"BJELICA, Milovan",B. Milovan,True
+204,Initials,firstname_initials,firstname_initials,"BJELICA, Milovan",B. Milovan,True
+205,Initials,initials_lastname,initials_lastname,"BJELICA, Milovan","BJELICA, M.",True
+206,Initials,lastname_initials_clear_first_name,lastname_initials_clear_first_name,"BJELICA, Milovan", M.,True
+207,Character Extension,add_spc_in_letters,add_spc_in_letters,"BJELICA, Milovan","BJELICA, Mi lovan",True
+208,Character Extension,add_prefix,add_al_and_hyphen,"BJELICA, Milovan","BJELICA, al-Milovan",True
+209,Character Extension,add_prefix,add_Al_and_space,"BJELICA, Milovan","BJELICA, Al-Milovan",True
+210,Character Extension,add_prefix,add_El_and_space,"BJELICA, Milovan","BJELICA, El-Milovan",True
+211,Character Extension,add_vowel,add_vowel,"BJELICA, Milovan","BJELICA, Miliovan",True
+212,Character Extension,add_h_before_vowel,add_h_before_vowel,"BJELICA, Milovan","BJELICA, Milhovan",True
+213,Character Extension,add_consonant,add_consonant_final_s,"BJELICA, Milovan","BJELICA, Milovans",True
+214,Character Extension,add_consonant,add_consonant_final_r,"BJELICA, Milovan","BJELICA,r Milovan",True
+215,Character Extension,add_consonant,add_consonant_final_z,"BJELICA, Milovan","BJELICA, Milovanz",True
+216,Character Extension,add_consonant,add_consonant_uncommon,"BJELICA, Milovan","BJbELICA, Milovan",True
+217,Character Extension,add_consonant,add_consonant_double,"BJELICA, Milovan","BJELICA, Millovan",True
+218,Character Extension,add_special_character,add_special_character_apostrophe,"BJELICA, Milovan","BJELICA, Milov'an",True
+219,Character Extension,add_special_character,add_special_character_accent,"BJELICA, Milovan","BJELICA, Mílovan",True
+220,Character Extension,add_special_character,add_special_character_uncommon,"BJELICA, Milovan","BJELIC(A, Milovan",True
+221,Character Replacement,phonetic_replacement,phonetic_replacement,"BJELICA, Milovan","BJALICA, Milovan",True
+222,Character Replacement,typographic_error,typographic_error,"BJELICA, Milovan","BJRLICA, Milovan",True
+223,Character Replacement,alphabet_alternative,alphabet_alternative,"BJELICA, Milovan","BJELICA, Milovañ",True
+224,Character Replacement,character_replacement_uncommon,character_replacement_uncommon,"BJELICA, Milovan","BJELLCA, Milovan",True
+225,Character Reduction,phonetic_miss,remove_h,"BJELICA, Milovan","BJELICA, Milovan",False
+226,Character Reduction,phonetic_miss,remove_c_before_k,"BJELICA, Milovan","BJELICA, Milovan",False
+227,Character Reduction,phonetic_miss,remove_e_before_s,"BJELICA, Milovan","BJELICA, Milovan",False
+228,Character Reduction,phonetic_miss,remove_final_s,"BJELICA, Milovan","BJELICA, Milovan",False
+229,Character Reduction,phonetic_miss,remove_final_z,"BJELICA, Milovan","BJELICA, Milovan",False
+230,Character Reduction,phonetic_miss,remove_final_d,"BJELICA, Milovan","BJELICA, Milovan",False
+231,Character Reduction,character_reduction_uncommon,character_reduction_uncommon,"BJELICA, Milovan","BJELICA, ilovan",True
+232,Transposition,phonetic_transposition,phonetic_transposition,"BJELICA, Milovan","BJELICA, Milovan",False
+233,Transposition,transposition_uncommon,transposition_uncommon,"BJELICA, Milovan","BJELICA, Milovan",False
+234,Double Characters,double_character_reduction,double_character_reduction,"BJELICA, Milovan","BJELICA, Milovan",False
+235,Double Characters,double_character_insertion,double_character_insertion,"BJELICA, Milovan","BJELICAA, Milovan",True
+236,Spaces,spaces_reduction,spaces_reduction,"BJELICA, Milovan","BJELICA,Milovan",True
+237,Spaces,spaces_insertion,spaces_insertion,"BJELICA, Milovan","BJELI CA, Milovan",True
+238,Name Order,random_name_transposition,random_name_transposition,"BJELICA, Milovan","Milovan BJELICA,",True
+239,Name Order,transposition_name,transposition_name,"BJELICA, Milovan","Milovan BJELICA,",True
+240,Titles,title_insertion,title_insertion,"BJELICA, Milovan","Mx. BJELICA, Milovan",True
+241,Titles,title_removal,title_removal,"BJELICA, Milovan","BJELICA, Milovan",False
+242,Missing Name Component,name_component_deletion,name_component_deletion,"BJELICA, Milovan","BJELICA,",True
+243,Alias,Alias,Alias,"BJELICA, Milovan",CICKO,Alias
