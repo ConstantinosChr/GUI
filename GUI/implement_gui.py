@@ -3,8 +3,8 @@ from PyQt5.QtWidgets import QMainWindow, QFileDialog
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtWidgets import QApplication
 import sys
-import test2
-from source.namevariationfunctions import *
+from GUI.source import test2
+from GUI.source.namevariationfunctions import *
 
 
 class MainWindow(QMainWindow, test2.Ui_MainWindow):
@@ -75,9 +75,13 @@ class MainWindow(QMainWindow, test2.Ui_MainWindow):
         if self.inputText.text().startswith('C:/'):
             if not self.inputText.text().endswith(".csv"):
                 return self.popup("Warning", "The input path does not contain a csv file.")
+        elif self.inputText.text().startswith('/'):
+            if not self.inputText.text().endswith(".csv"):
+                return self.popup("Warning", "The input path does not contain a csv file.")
 
         if not self.inputText.text().startswith('C:/'):
-            self.df_loaded = self.convert(self.inputText.text().replace(", ", ","))
+            if not self.inputText.text().startswith('/'):
+                self.df_loaded = self.convert(self.inputText.text().replace(", ", ","))
 
         if self.inputText.text() == "":
             return self.popup("Warning", "No input file was selected.")
@@ -88,6 +92,7 @@ class MainWindow(QMainWindow, test2.Ui_MainWindow):
             self.function_list = ["Initials", "Character Extension", "Character Reduction", "Character Replacement",
                                   "Transposition", "Double Characters", "Spaces", "Name Order", "Titles",
                                   "Missing Name Component", "Also Known As"]
+
             for name in self.df_loaded:
                 self.final_df = self.final_df.append(get_name_var(name, self.function_list), ignore_index=True)
 
@@ -105,8 +110,8 @@ class MainWindow(QMainWindow, test2.Ui_MainWindow):
                 len(self.final_df[self.final_df['Variation Category'] == 'Missing Name Component']))
             self.akaEstimate.display(len(self.final_df[self.final_df['Variation Category'] == 'Alias']))
 
-            self.popup("Estimates Calculated", "The estimates shown represent the maximum number of test cases that can be "
-                                               "generated from each variation category.")
+            self.popup("Estimates Calculated", "The estimates shown represent the maximum number of test cases that can"
+                                               " be generated from each variation category.")
 
     def convert(self, name):
         list_of_names = list(name.split(","))
@@ -120,9 +125,13 @@ class MainWindow(QMainWindow, test2.Ui_MainWindow):
         if self.inputText.text().startswith('C:/'):
             if not self.inputText.text().endswith(".csv"):
                 return self.popup("Warning", "The input path does not contain a csv file.")
+        elif self.inputText.text().startswith('/'):
+            if not self.inputText.text().endswith(".csv"):
+                return self.popup("Warning", "The input path does not contain a csv file.")
 
         if not self.inputText.text().startswith('C:/'):
-            self.df_loaded = self.convert(self.inputText.text().replace(", ", ","))
+            if not self.inputText.text().startswith('/'):
+                self.df_loaded = self.convert(self.inputText.text().replace(", ", ","))
 
         if self.inputText.text() == "":
             self.popup("Warning", "No input file was selected.")

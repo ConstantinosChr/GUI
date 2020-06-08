@@ -740,8 +740,8 @@ def double_characters_function(original_name):
 # Spaces
 def spaces_reduction(name):
     '''Deletes a space randomly in the string'''
-    if len(name)>1:
-        ci = np.random.choice([i for i,j in enumerate(name) if j== " "])
+    if len(name) > 1:
+        ci = np.random.choice([i for i, j in enumerate(name) if j == " "])
         return name[:ci] + name[ci+1:]
     else:
         return name
