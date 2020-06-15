@@ -84,6 +84,8 @@ def swap_element(c, i, j):
     c[i], c[j] = c[j], c[i]
     return ' '.join(c)
 
+def all_same(items):
+    return all(x == items[0] for x in items)
 
 def check_success(original_name, resulting_name):
     if resulting_name != original_name:
@@ -179,8 +181,11 @@ def add_spc_in_letters(name):
     """Randomly adds a space in the middle of name element"""
     name_elements = name.split(" ")
     cne = np.random.choice(name_elements)  # chosen name element
-    cli = np.random.choice([x + 1 for x in range(len(cne) - 1)])  # chosen letter index
-    return name.replace(cne, cne[:cli] + " " + cne[cli:])
+    if len(cne) > 1:
+        cli = np.random.choice([x + 1 for x in range(len(cne) - 1)])  # chosen letter index
+        return name.replace(cne, cne[:cli] + " " + cne[cli:])
+    else:
+        return name
 
 
 def add_al_and_hyphen(name):
@@ -207,15 +212,21 @@ def add_vowel(name):
     name_elements = name.split(" ")
     cv = np.random.choice(vowels)  # chosen vowel
     cne = np.random.choice(name_elements)  # chosen name element
-    cli = np.random.choice([x + 1 for x in range(len(cne) - 1)])  # chosen letter index
-    return name.replace(cne, cne[:cli] + cv + cne[cli:])
+    if len(cne) > 1:
+        cli = np.random.choice([x + 1 for x in range(len(cne) - 1)])  # chosen letter index
+        return name.replace(cne, cne[:cli] + cv + cne[cli:])
+    else:
+        return name
 
 
 def add_h_before_vowel(name):
-    '''Adds an h before a vowel to a randomly chosen element of the name'''
+    """Adds an h before a vowel to a randomly chosen element of the name"""
     vlcindx = get_vowel_lowercase_index(name)  # vowels lower case index
-    rcvi = np.random.choice(vlcindx)  # randomly chosen vowel index
-    return name[:rcvi] + "h" + name[rcvi:]
+    if len(vlcindx) > 0:
+        rcvi = np.random.choice(vlcindx)  # randomly chosen vowel index
+        return name[:rcvi] + "h" + name[rcvi:]
+    else:
+        return name
 
 
 def add_consonant_final_s(name):
@@ -245,17 +256,23 @@ def add_consonant_uncommon(name):
     name_elements = name.split(" ")
     cc = np.random.choice(consonants)
     cne = np.random.choice(name_elements)  # chosen name element
-    cli = np.random.choice([x + 1 for x in range(len(cne) - 1)])  # chosen letter index
-    return name.replace(cne, cne[:cli] + cc + cne[cli:])
+    if len(cne) > 1:
+        cli = np.random.choice([x + 1 for x in range(len(cne) - 1)])  # chosen letter index
+        return name.replace(cne, cne[:cli] + cc + cne[cli:])
+    else:
+        return name
 
 
 def add_consonant_double(name):
     '''Adds a double consonant in a randomly chosen element of the name'''
     consonants = [x for x in string.ascii_lowercase if x not in "aeiou"]
     cindx = get_consonant_lowercase_index(name)  # consonants index
-    ccindx = np.random.choice(cindx)  # chosen consonant index
-    cdc = name[ccindx]  # chosen doubled consonant
-    return name[:ccindx] + cdc + name[ccindx:]
+    if len(cindx) > 0:
+        ccindx = np.random.choice(cindx)  # chosen consonant index
+        cdc = name[ccindx]  # chosen doubled consonant
+        return name[:ccindx] + cdc + name[ccindx:]
+    else:
+        return name
 
 
 def add_special_character_apostrophe(name):
@@ -271,8 +288,11 @@ def add_special_character_accent(name):
     accents_dict = {"a": "á", "e": "é", "i": "í", "o": "ó", "u": "ú"}
     name_elements = name.split(" ")
     vlcindx = get_vowel_lowercase_index(name)  # vowels lower case index
-    rcvi = np.random.choice(vlcindx)  # randomly chosen vowel index
-    return name[:rcvi] + accents_dict[name[rcvi]] + name[rcvi + 1:]
+    if len(vlcindx) > 0:
+        rcvi = np.random.choice(vlcindx)  # randomly chosen vowel index
+        return name[:rcvi] + accents_dict[name[rcvi]] + name[rcvi + 1:]
+    else:
+        return name
 
 
 def add_special_character_uncommon(name):
@@ -742,8 +762,11 @@ def double_characters_function(original_name):
 def spaces_reduction(name):
     '''Deletes a space randomly in the string'''
     if len(name) > 1:
-        ci = np.random.choice([i for i, j in enumerate(name) if j == " "])
-        return name[:ci] + name[ci + 1:]
+        if ' ' in name:
+            ci = np.random.choice([i for i, j in enumerate(name) if j == " "])
+            return name[:ci] + name[ci + 1:]
+        else:
+            return name
     else:
         return name
 
@@ -816,12 +839,15 @@ def random_name_transposition(name):
     '''Suffles name order at random'''
     name_elements_original = name.split(" ")
     name_elements_shuffle = name.split(" ")
-    if len(name_elements_original) >= 2:
-        while name_elements_shuffle == name_elements_original:
-            np.random.shuffle(name_elements_shuffle)
-        return " ".join(name_elements_shuffle)
-    else:
+    if all_same(name_elements_original):
         return name
+    else:
+        if len(name_elements_original) >= 2:
+            while name_elements_shuffle == name_elements_original:
+                np.random.shuffle(name_elements_shuffle)
+            return " ".join(name_elements_shuffle)
+        else:
+            return name
 
 
 def name_order_function(original_name):
