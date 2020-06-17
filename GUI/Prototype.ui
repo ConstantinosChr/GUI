@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>595</width>
-    <height>460</height>
+    <width>571</width>
+    <height>508</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,632 @@
    <enum>QTabWidget::Rounded</enum>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_6">
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="InputsGroup">
+      <property name="title">
+       <string>Inputs</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="inputLabel">
+         <property name="text">
+          <string>Input path:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="inputText">
+         <property name="placeholderText">
+          <string>C:\Program Files\Your Folder\Your Subfolder\Your_csv.csv</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QToolButton" name="inputButton">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="outputLabel">
+         <property name="text">
+          <string>Output path:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="outputText">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="statusTip">
+          <string/>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="accessibleName">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>C:\Program Files\Your Folder\Your Subfolder</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QToolButton" name="outputButton">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="outputFileNameLabel">
+         <property name="text">
+          <string>Output File Name:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="outputFileNameText">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="statusTip">
+          <string/>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="accessibleName">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Output</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="DistributionGroup">
+      <property name="title">
+       <string>Distribution</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="1" column="4">
+        <widget class="QLCDNumber" name="TotalEstimate">
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="segmentStyle">
+          <enum>QLCDNumber::Flat</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QLabel" name="NumbeOfCasesLabel">
+         <property name="text">
+          <string>Number of test cases to be generated:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="NumberOfCasesText">
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>e.g. 100</string>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>60</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="ForceYes">
+         <property name="text">
+          <string>Yes</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="ForceLabel">
+         <property name="text">
+          <string>Force Distribution:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QRadioButton" name="ForceNo">
+         <property name="text">
+          <string>No</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="VariationCategoriesGroup">
+      <property name="title">
+       <string>Variation Categories</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="catlabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Categories</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QCheckBox" name="Transposition">
+           <property name="text">
+            <string>Transposition</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="Initials">
+           <property name="text">
+            <string>Initials</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="CharacterExtension">
+           <property name="text">
+            <string>Character Extension</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QCheckBox" name="CharacterReplacement">
+           <property name="text">
+            <string>Character Replacement</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="CharacterReduction">
+           <property name="text">
+            <string>Character Reduction</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="5" column="0">
+          <widget class="QSpinBox" name="TranspositionPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QSpinBox" name="CharRepPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLCDNumber" name="initialsEstimate">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="smallDecimalPoint">
+            <bool>false</bool>
+           </property>
+           <property name="mode">
+            <enum>QLCDNumber::Dec</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLCDNumber" name="charrepEstimate">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QSpinBox" name="CharRedPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="perclabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLCDNumber" name="transEstimate">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="estlabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Estimate</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLCDNumber" name="charextEstimate">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QSpinBox" name="InitialsPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QSpinBox" name="CharExtPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLCDNumber" name="charredEstimate">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="2">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="catlabel_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Categories</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="DoubleCharacters">
+           <property name="text">
+            <string>Double Characters</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="Spaces">
+           <property name="text">
+            <string>Spaces</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QCheckBox" name="NameOrder">
+           <property name="text">
+            <string>Name Order</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="Titles">
+           <property name="text">
+            <string>Titles</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QCheckBox" name="MissingNameComp">
+           <property name="text">
+            <string>Missing Name Component</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QCheckBox" name="AlsoKnownAs">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Also Known As</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="3">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="1" column="1">
+          <widget class="QLCDNumber" name="doublecharEstimate">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLCDNumber" name="akaEstimate">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLCDNumber" name="titlesEstimate">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLCDNumber" name="spacesEstimate">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLCDNumber" name="nameorderEstimate">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="mode">
+            <enum>QLCDNumber::Dec</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLCDNumber" name="missnamecompEstimate">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="digitCount">
+            <number>5</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QSpinBox" name="NameOrderPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QSpinBox" name="SpacesPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QSpinBox" name="DoubleCharPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QSpinBox" name="TitlesPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QSpinBox" name="MissNameCompPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QSpinBox" name="AlsoKnownAsPerc">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="perclabel_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="estlabel_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Estimate</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
     <item row="3" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
@@ -66,1640 +691,6 @@
       </item>
      </layout>
     </item>
-    <item row="0" column="0">
-     <widget class="QGroupBox" name="InputsGroup">
-      <property name="title">
-       <string>Inputs</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QLabel" name="inputLabel">
-         <property name="text">
-          <string>Input path:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLineEdit" name="inputText">
-         <property name="placeholderText">
-          <string>C:\Program Files\Your Folder\Your Subfolder\Your_csv.csv</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QToolButton" name="inputButton">
-         <property name="text">
-          <string>...</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="outputLabel">
-         <property name="text">
-          <string>Output path:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="outputText">
-         <property name="statusTip">
-          <string/>
-         </property>
-         <property name="whatsThis">
-          <string/>
-         </property>
-         <property name="accessibleName">
-          <string/>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="inputMask">
-          <string/>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="placeholderText">
-          <string>C:\Program Files\Your Folder\Your Subfolder\Your_csv.csv</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QToolButton" name="outputButton">
-         <property name="text">
-          <string>...</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QGroupBox" name="VariationCategoriesGroup">
-      <property name="title">
-       <string>Variation Categories</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_4">
-       <item row="0" column="0">
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QCheckBox" name="Initials">
-           <property name="text">
-            <string>Initials</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="CharacterExtension">
-           <property name="text">
-            <string>Character Extension</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="CharacterReplacement">
-           <property name="text">
-            <string>Character Replacement</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="CharacterReduction">
-           <property name="text">
-            <string>Character Reduction</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="Transposition">
-           <property name="text">
-            <string>Transposition</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="0" column="1">
-        <layout class="QGridLayout" name="gridLayout_3">
-         <item row="0" column="0">
-          <widget class="QComboBox" name="InitialsPerc">
-           <property name="cursor">
-            <cursorShape>ArrowCursor</cursorShape>
-           </property>
-           <property name="acceptDrops">
-            <bool>false</bool>
-           </property>
-           <property name="editable">
-            <bool>false</bool>
-           </property>
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLCDNumber" name="initialsEstimate">
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="lineWidth">
-            <number>1</number>
-           </property>
-           <property name="smallDecimalPoint">
-            <bool>false</bool>
-           </property>
-           <property name="mode">
-            <enum>QLCDNumber::Dec</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QComboBox" name="CharExtPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLCDNumber" name="charextEstimate">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QComboBox" name="CharRepPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLCDNumber" name="charrepEstimate">
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QComboBox" name="CharRedPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLCDNumber" name="charredEstimate">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="QComboBox" name="TranspositionPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QLCDNumber" name="transEstimate">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="0" column="2">
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QCheckBox" name="DoubleCharacters">
-           <property name="text">
-            <string>Double Characters</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="Spaces">
-           <property name="text">
-            <string>Spaces</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="NameOrder">
-           <property name="text">
-            <string>Name Order</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="Titles">
-           <property name="text">
-            <string>Titles</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="MissingNameComp">
-           <property name="text">
-            <string>Missing Name Component</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="AlsoKnownAs">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="text">
-            <string>Also Known As</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="0" column="3">
-        <layout class="QGridLayout" name="gridLayout_2">
-         <item row="0" column="0">
-          <widget class="QComboBox" name="DoubleCharPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLCDNumber" name="doublecharEstimate">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QComboBox" name="SpacesPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLCDNumber" name="spacesEstimate">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QComboBox" name="NameOrderPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLCDNumber" name="nameorderEstimate">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="mode">
-            <enum>QLCDNumber::Dec</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QComboBox" name="TitlesPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLCDNumber" name="titlesEstimate">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="QComboBox" name="MissNameCompPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QLCDNumber" name="missnamecompEstimate">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="digitCount">
-            <number>5</number>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="0">
-          <widget class="QComboBox" name="AlsoKnownAsPerc">
-           <item>
-            <property name="text">
-             <string>0%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>5%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>10%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>15%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>20%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>25%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>30%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>35%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>40%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>45%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>50%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>55%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>60%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>65%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>70%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>75%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>80%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>85%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>90%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>95%</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>100%</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="QLCDNumber" name="akaEstimate">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="segmentStyle">
-            <enum>QLCDNumber::Flat</enum>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QGroupBox" name="DistributionGroup">
-      <property name="title">
-       <string>Distribution</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_5">
-       <item row="0" column="0">
-        <widget class="QLabel" name="ForceLabel">
-         <property name="text">
-          <string>Force Distribution:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="ForceYes">
-         <property name="text">
-          <string>Yes</string>
-         </property>
-         <property name="checked">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0" colspan="3">
-        <widget class="QLabel" name="NumbeOfCasesLabel">
-         <property name="text">
-          <string>Number of test cases to be generated:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QLineEdit" name="NumberOfCasesText">
-         <property name="readOnly">
-          <bool>false</bool>
-         </property>
-         <property name="placeholderText">
-          <string>e.g. 100</string>
-         </property>
-         <property name="clearButtonEnabled">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="5">
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>60</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="0" column="2">
-        <widget class="QRadioButton" name="ForceNo">
-         <property name="text">
-          <string>No</string>
-         </property>
-         <property name="checked">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="4">
-        <widget class="QLCDNumber" name="TotalEstimate">
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
-         </property>
-         <property name="segmentStyle">
-          <enum>QLCDNumber::Flat</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -1707,7 +698,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>595</width>
+     <width>571</width>
      <height>21</height>
     </rect>
    </property>
@@ -1716,34 +707,19 @@
  </widget>
  <tabstops>
   <tabstop>inputText</tabstop>
-  <tabstop>outputText</tabstop>
-  <tabstop>inputButton</tabstop>
-  <tabstop>outputButton</tabstop>
   <tabstop>ForceYes</tabstop>
   <tabstop>ForceNo</tabstop>
   <tabstop>NumberOfCasesText</tabstop>
-  <tabstop>Initials</tabstop>
-  <tabstop>InitialsPerc</tabstop>
   <tabstop>DoubleCharacters</tabstop>
-  <tabstop>DoubleCharPerc</tabstop>
   <tabstop>CharacterExtension</tabstop>
-  <tabstop>CharExtPerc</tabstop>
   <tabstop>Spaces</tabstop>
-  <tabstop>SpacesPerc</tabstop>
   <tabstop>CharacterReplacement</tabstop>
-  <tabstop>CharRepPerc</tabstop>
   <tabstop>NameOrder</tabstop>
-  <tabstop>NameOrderPerc</tabstop>
   <tabstop>CharacterReduction</tabstop>
-  <tabstop>CharRedPerc</tabstop>
   <tabstop>Titles</tabstop>
-  <tabstop>TitlesPerc</tabstop>
   <tabstop>Transposition</tabstop>
-  <tabstop>TranspositionPerc</tabstop>
   <tabstop>MissingNameComp</tabstop>
-  <tabstop>MissNameCompPerc</tabstop>
   <tabstop>AlsoKnownAs</tabstop>
-  <tabstop>AlsoKnownAsPerc</tabstop>
   <tabstop>estimateButton</tabstop>
   <tabstop>submitButton</tabstop>
  </tabstops>
@@ -1772,12 +748,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>195</x>
-     <y>140</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>180</x>
-     <y>240</y>
+     <x>191</x>
+     <y>264</y>
     </hint>
    </hints>
   </connection>
@@ -1788,12 +764,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>195</x>
-     <y>264</y>
+     <x>191</x>
+     <y>289</y>
     </hint>
    </hints>
   </connection>
@@ -1804,12 +780,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>195</x>
-     <y>290</y>
+     <x>191</x>
+     <y>318</y>
     </hint>
    </hints>
   </connection>
@@ -1820,12 +796,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>195</x>
-     <y>316</y>
+     <x>191</x>
+     <y>347</y>
     </hint>
    </hints>
   </connection>
@@ -1836,12 +812,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>195</x>
-     <y>342</y>
+     <x>185</x>
+     <y>376</y>
     </hint>
    </hints>
   </connection>
@@ -1852,12 +828,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>414</x>
-     <y>238</y>
+     <x>477</x>
+     <y>260</y>
     </hint>
    </hints>
   </connection>
@@ -1868,12 +844,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>414</x>
-     <y>264</y>
+     <x>477</x>
+     <y>289</y>
     </hint>
    </hints>
   </connection>
@@ -1884,12 +860,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>414</x>
-     <y>290</y>
+     <x>477</x>
+     <y>318</y>
     </hint>
    </hints>
   </connection>
@@ -1900,12 +876,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>414</x>
-     <y>316</y>
+     <x>477</x>
+     <y>347</y>
     </hint>
    </hints>
   </connection>
@@ -1916,12 +892,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>414</x>
-     <y>342</y>
+     <x>477</x>
+     <y>376</y>
     </hint>
    </hints>
   </connection>
@@ -1932,12 +908,12 @@
    <slot>setDisabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>187</x>
-     <y>139</y>
+     <x>184</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
-     <x>414</x>
-     <y>368</y>
+     <x>477</x>
+     <y>405</y>
     </hint>
    </hints>
   </connection>
